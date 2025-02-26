@@ -1,0 +1,139 @@
+/* Modal overlay to dim background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Main modal container */
+  .csv-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+  }
+  
+  /* File input container */
+  .file-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .file-text {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .csv-button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .csv-button:hover {
+    background: #0056b3;
+  }
+  
+  
+  /* Radio buttons for actions */
+  .action-selection {
+    text-align: left;
+    margin: 15px 0;
+    color: #333;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .action-selection label {
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .action-selection input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* CSV Preview table */
+  .csv-preview {
+    margin-top: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  
+  .csv-preview table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .csv-preview td {
+    padding: 5px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  /* Buttons for form actions */
+  .form-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .submit-button, .cancel-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .submit-button {
+    background: #28a745;
+    color: white;
+  }
+  
+  .submit-button:hover {
+    background: #218838;
+  }
+  
+  .cancel-button {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background: #c82333;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }

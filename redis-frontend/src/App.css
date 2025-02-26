@@ -1,0 +1,389 @@
+App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+.con{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, rgba(4, 57, 39, 0.8), rgba(11, 102, 35, 0.8)), url('/public/bg3.jpg');
+  background-size: cover;
+  background-position: center; /* Full viewport width */
+  height: 100vh;
+}
+.up h2{
+  color: white;
+}
+/* 📊 DASHBOARD TOGGLE BUTTON */
+.dashboard-toggle {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.dashboard-toggle button {
+  background: #17a2b8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dashboard-toggle button:hover {
+  background: #138496;
+}
+
+/* ➕ ADD STUDENT BUTTON */
+.add-student-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-student-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-student-btn:hover {
+  background: #218838;
+}
+
+/*TABLE*/
+.up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Adds spacing below the header */
+}
+/* HEADINGS */
+h1, h2 {
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+/* TABLE CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 90px auto 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+  
+}
+
+.table-wrapper {
+  width: 100%; /* Ensures it takes full width of the container */
+  max-width: 1450px; /* Set a fixed width */
+  height: 300px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* hidden: Prevent horizontal scrolling */
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  margin: 0 auto; /* Center the table */
+}
+
+/*BUTTONS*/
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  justify-content: center; /* Center align buttons */
+  margin-top: 15px;
+}
+
+/* GENERAL BUTTON STYLES */
+.button-group button {
+  padding: 10px 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  height: 40px; /* Ensures all buttons have the same height */
+  min-width: 120px; /* Keeps buttons uniform */
+}
+
+/* TOGGLE DASHBOARD BUTTON */
+.dashboard-container {
+  margin-top: 70px;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+.dashboard-toggle {
+  background-color: #2d6a4f; /* Dark green */
+  color: white;
+}
+
+.dashboard-toggle:hover {
+  background-color: #1b4332;
+}
+
+/* ADD STUDENT BUTTON */
+.add-btn {
+  background-color: #38a3a5; /* Teal Green */
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: #2c7a7b;
+}
+
+/* UPLOAD CSV BUTTON */
+.upload-button {
+  background-color: #ffb703; /* Yellow */
+  color: black;
+}
+
+.upload-button:hover {
+  background-color: #fcbf49;
+}
+
+
+/* TABLE */
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(15, 45, 30, 0.95);
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.students-table thead {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 40, 20, 0.95);
+  z-index: 1;
+}
+/* TABLE HEADERS */
+.students-table th {
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+/* TABLE CELLS 
+.students-table th, .students-table td {
+  padding: 14px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+}*/
+.students-table th, .students-table td {
+  width: 150px; /* Set a fixed width for each column */
+  padding: 12px;
+  text-align: center;
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-overflow: ellipsis; /* Show "..." if content is too long */
+}
+
+
+/* STICKY FIRST COLUMN */
+.students-table th:first-child {
+  position: sticky;
+  left: 0;
+  background: rgba(30, 80, 50, 0.9);
+  z-index: 101;
+}
+/* TABLE ROW HOVER EFFECT */
+.students-table tbody tr:hover {
+  background: rgba(60, 120, 90, 0.5);
+}
+/* ===== SCROLLBAR STYLING (Optional) ===== */
+.table-wrapper::-webkit-scrollbar {
+  width: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* HOVER EFFECT */
+.students-table tbody tr:hover {
+  background: rgba(60, 120, 90, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+/* BUTTONS */
+.students-table button {
+  margin: 3px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+
+}
+
+/* EDIT BUTTON */
+.students-table button:first-child {
+  background: #ffb74d; /* Warm orange */
+  color: black;
+}
+
+.students-table button:first-child:hover {
+  background: #ffcc80;
+}
+
+/* DELETE BUTTON */
+.students-table button:last-child {
+  background: #e63946; /* Deep red */
+  color: white;
+}
+
+.students-table button:last-child:hover {
+  background: #d62828;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .students-table th,
+  .students-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+  
+  .students-table button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  
+  .table-wrapper {
+    max-height: 300px; /* Reduce height on smaller screens */
+  }
+}
+/*MODAL*/
+
+/* Modal Overlay - Covers the whole screen */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it covers everything */
+}
+
+/* Modal Container */
+.modal {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 450px; /* Slightly larger for better spacing */
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1001; /* Ensure it's above the overlay */
+  animation: fadeIn 0.3s ease-in-out; /* Smooth opening animation */
+  color: #28a745;
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add spacing between inputs */
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: black;
+  transition: color 0.2s ease-in-out;
+}
+
+.close:hover {
+  color: red;
+}
+
+/* Input Styling */
+.modal input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Submit Button */
+.modal button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #28a745; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.modal button:hover {
+  background-color: #218838;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Modal for Smaller Screens */
+@media (max-width: 480px) {
+  .modal {
+    width: 90%;
+    padding: 20px;
+  }
+}

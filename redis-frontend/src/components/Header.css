@@ -1,0 +1,95 @@
+.header {
+    background-color: #282c34;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .search-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 8px 35px 8px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+  }
+  
+  .clear-icon {
+    position: absolute;
+    right: 40px; /* Space it away from the search icon */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .clear-icon:hover {
+    color: #f44336; 
+  }
+  
+  .search-form select {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: white;
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  
+  .logout-button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button {
+    background-color: #f44336;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f;
+  }

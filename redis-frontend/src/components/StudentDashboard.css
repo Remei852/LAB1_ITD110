@@ -1,0 +1,117 @@
+/* STATS GRID */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  /* STAT CARD */
+  .stat-card {
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  
+  }
+  
+  /* Different Background Colors */
+  .stat-card:nth-child(1) {
+    background: rgba(34, 139, 34, 0.8); 
+    backdrop-filter: blur(10px); 
+  }
+  
+  .stat-card:nth-child(2) {
+    background: rgba(60, 179, 113, 0.8); 
+  }
+  
+  .stat-card:nth-child(3) {
+    background: rgba(46, 139, 87, 0.8); 
+  }
+  
+  .stat-card:nth-child(4) {
+    background: rgba(0, 128, 0, 0.8); 
+  }
+  
+  .stat-card:nth-child(5) {
+    background: rgba(50, 205, 50, 0.8); 
+  }
+  
+  /* Hover Effect */
+  .stat-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Text Styling */
+  .stat-card h3 {
+    margin: 0;
+    color: #d6f5d6;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+  
+  
+  /* CHART GRID */
+  .charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  /* CHART CARD */
+  .chart-card {
+    background: rgba(198, 234, 214, 0.875);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  
+  .chart-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .chart-card.wide {
+    grid-column: 1 / -1;
+  }
+  
+  .chart-card h3 {
+    margin: 0;
+    color: #3f7e3f;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .chart-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .charts-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .chart-card {
+      margin-bottom: 1rem;
+    }
+  }
